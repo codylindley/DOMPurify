@@ -172,7 +172,7 @@
             /* Create documents to map markup to */
             var dom = document.implementation.createHTMLDocument('');
                 dom.body.parentNode.removeChild(dom.body.parentNode.firstElementChild);
-                dom.body.outerHTML = dirty;
+                dom.body.innerHTML = dirty;
                 
             /* Cover IE9's buggy outerHTML behavior */
             if(dom.body === null) {
